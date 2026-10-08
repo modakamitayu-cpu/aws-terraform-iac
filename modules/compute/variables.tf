@@ -1,0 +1,12 @@
+variable "name" { type = string }
+variable "instance_type" { type = string }
+variable "private_subnet_id" { type = string }
+variable "private_subnet_ids" { type = list(string) }
+variable "instance_sg_id" { type = string }
+variable "target_group_arn" { type = string }
+variable "data_volume_size" { type = number }
+variable "availability_zone" { type = string }
+variable "enable_asg" { type = bool }
+variable "asg_min_size" { type = number }
+variable "asg_desired_capacity" { type = number }
+variable "asg_max_size" { type = number }
